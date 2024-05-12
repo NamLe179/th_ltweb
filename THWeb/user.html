@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght
+    @100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font
+    -awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdY
+    TDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHU
+    SCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/c451d80140.js" crossorigin="
+    anonymous"></script>
+    <title>Facebook Profile Page</title>
+</head>
+<body>
+            
+    <nav>
+        <div class="nav_left">
+            <img src="image/logo.png" alt="Logo" class="logo">
+            <div class="search_box">
+                <img src="images/search.png" alt="search">
+                <input type="search" placeholder="Search">
+            </div>
+        </div>
+        <div class="nav-middle">
+            <a href="./index.html" class="active">
+                <i class="fa fa-home"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa fa-play-circle"></i>
+            </a>
+
+            <a href="#">
+                <i class="fas fa-store-alt"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa fa-user-friends"></i>
+            </a>
+            
+            <a href="#">
+                <i class="fa fa-users"></i>
+            </a>
+        </div>
+
+        <div class="nav_right">
+            <a href="#">
+                <i class="fas fa-ellipsis-h"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-facebook-messenger"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa fa-bell"></i>
+            </a>
+
+            <div class="nav_user_icon online_icon" onclick="settingsMenuToggle()">
+                <img src="image/dp.jpg" alt="profile">
+            </div>
+        </div>
+        <!-- todo: setting menu -->
+        <div class="setting_menu">
+            
+            <div id="dark_btn" class="dark_btn_on">
+                <span></span>
+            </div>
+
+            <div class="settings_menu_inner">
+                <div class="user_profile">
+                    <img src="image/dp.jpg" alt="Pro We Are Pro You Now">
+                    <div>
+                        <p>Nam Le</p>
+                        <a href="./user.html">Xem trang cá nhân</a>
+                    </div>
+                </div>
+                <hr />
+                <div class="user_profile">
+                    <img src="images/feedback.png" alt="">
+                    <div>
+                        <p>Đóng góp ý kiến</p>
+                    </div>
+                </div>
+                <hr />
+                <div class="setting_link">
+                    <img src="images/setting.png" class="setting_icon" alt="">
+                    <a href="#">Cài đặt & Quyền riêng tư <img src="images/arrow.png" alt="" width="10px"></a>
+                </div>
+                <div class="setting_link">
+                    <img src="images/help.png" class="setting_icon" alt="">
+                    <a href="#">Trợ giúp & Hỗ trợ <img src="images/arrow.png" alt="" width="10px"></a>
+                </div>
+                <div class="setting_link">
+                    <img src="images/display.png" class="setting_icon" alt="">
+                    <a href="#">Màn hình & Trợ năng <img src="images/arrow.png" alt="" width="10px"></a>
+                </div>
+                <div class="setting_link">
+                    <img src="images/logout.png" class="setting_icon" alt="">
+                    <a href="#">Đăng xuất<img src="images/arrow.png" alt="" width="10px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- todo: Profile Page -->
+    <div class="profile_container">
+        <img src="image/meo.jpg" alt="cover" class="cover">
+        <div class="profile_detail">
+            <div class="proflie_detail_left">
+                <div class="profile_row">
+                    <img src="image/dp.jpg" alt="Profile" class="pd_image">
+                    <div>
+                        <h3>Nam Le</h3>
+                        <p>120 bạn bè</p>
+                        <img src="image/dp.jpg" alt="">
+                        <img src="image/dp.jpg" alt="">
+                        <img src="image/dp.jpg" alt="">
+                        <img src="image/dp.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="proflie_detail_right">
+                <button type="button"><img src="image/plus.jpg" alt="">Thêm vào tin</button>
+                <button type="button">Chỉnh sửa trang cá nhân</button>
+                <br />
+                <a href="#"><img src="images/more.png" alt=""></a>
+            </div>
+        </div>
+        <div class="profile_info">
+            <div class="info_col">
+                <div class="profile_intro">
+                    <h3>Giới thiệu</h3>
+                    <ul>
+                        <li><img src="image/profile-job.png"> Gì đó</li>
+                        <li><img src="image/profile-study.png">Học tại</li>
+                        <li><img src="image/profile-study.png">Học tại</li>
+                        <li><img src="image/profile-home.png">Sống tại</li>
+                        <li><img src="image/profile-location.png">Đến từ</li>
+                    </ul>
+                </div>
+                <div class="profile_intro">
+                    <div class="title_box">
+                        <h3>Ảnh</h3>
+                        <a href="">Xem tất cả ảnh</a>
+                    </div>
+                    <div class="photo_box">
+                        <div><img src="image/meo.jpg"></div>
+                            <div><img src="image/meo.jpg"></div>
+                            <div><img src="image/meo.jpg"></div>
+                            <div><img src="image/meo.jpg"></div>
+                            <div><img src="image/meo.jpg"></div>
+                            <div><img src="image/meo.jpg"></div>
+
+                    </div>
+                </div>
+                <div class="profile_intro">
+                    <div class="title_box">
+                        <h3>Bạn bè</h3>
+                        <a href="">Xem tất cả bạn bè</a>
+                    </div>
+                    <p>40 người bạn</p>
+                    <div class="freinds_box">
+                        <div><img src="image/dp.jpg"><p>Bạn A</p></div>
+                        <div><img src="image/dp.jpg"><p>Bạn B</p></div>
+                        <div><img src="image/dp.jpg"><p>Bạn C</p></div>
+                        <div><img src="image/dp.jpg"><p>Bạn D</p></div>
+                        <div><img src="image/dp.jpg"><p>Bạn E</p></div>
+                        <div><img src="image/dp.jpg"><p>Bạn F</p></div>
+                        <div><img src="image/dp.jpg"><p>Bạn G</p></div>
+                        <div><img src="image/dp.jpg"><p>Bạn H</p></div>
+                        <div><img src="image/dp.jpg"><p>Bạn I</p></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="post_col">
+                <div class="post_container">
+                    <div class="user_profile">
+                        <img src="image/dp.jpg" alt="Pro We Are Pro You Now">
+                        <div>
+                            <p>Nam Le</p>
+                            <small>Công khai <i class="fa fa-caret-down"></i></small>
+                        </div>
+                    </div>
+                    <div class="post_input_container">
+                        <input id="input_vlaue" placeholder="Lê ơi, bạn đang nghĩ gì thế?"/>
+                        <button id="button_value">Post</button>
+                        <div class="add_post_link">
+                            <a href="#"><img src="images/live-video.png" alt="Its Video Time">Video trực tiếp</a>
+                            <a href="#"><img src="images/photo.png" alt="Its Video Time">Ảnh/Video</a>
+                            <a href="#"><img src="images/feeling.png" alt="Its Video Time">Cảm xúc/Hoạt động</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
